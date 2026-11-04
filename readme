@@ -1,0 +1,29 @@
+# 🏢 HRIS & Absensi App (Laravel Geofencing GPS)
+
+Aplikasi **Human Resource Information System (HRIS)** dan Sistem Absensi Karyawan berbasis web yang dikembangkan menggunakan **Laravel 9** dengan fitur unggulan **GPS-Based Geofencing** untuk memastikan absensi karyawan sesuai dengan radius lokasi kantor yang ditentukan.
+
+---
+
+## ✨ Fitur Utama
+
+### 👤 Portal Karyawan (Employee)
+* **Absen Masuk & Pulang Berbasis GPS (Geofencing)**: Memvalidasi posisi koordinat perangkat karyawan menggunakan rumus *Haversine* terhadap titik pusat kantor dan batas radius maksimal.
+* **Riwayat Absensi**: Memantau catatan riwayat kehadiran secara *real-time*.
+* **Pengajuan Cuti / Izin**: Form pengajuan cuti dan izin secara digital.
+* **Profil Mandiri**: Mengelola data diri dan informasi karyawan.
+
+### 🛠️ Panel Admin / HRD (Administrator)
+* **Dashboard Statistik**: Memantau total karyawan, rekap kehadiran harian, dan persetujuan cuti.
+* **Manajemen Pengaturan Koordinat Kantor (Dinamis)**: Admin dapat mengubah titik pusat kantor (`Latitude` & `Longitude`) serta jarak maksimal radius GPS langsung melalui panel web tanpa mengubah kode program.
+* **Manajemen Karyawan & Shift Kerja**: Mengelola data pegawai dan pengaturan shift kerja.
+* **Laporan Kehadiran**: Ekspor laporan absensi dalam format Excel (CSV) dan Cetak PDF.
+
+---
+
+## 💻 Tech Stack
+* **Framework Backend:** Laravel 9 (PHP 8.0+)
+* **Database:** MySQL / SQLite
+* **Frontend UI:** Tailwind CSS, Blade Templates
+* **Geolokasi:** HTML5 Geolocation API & Haversine Formula
+
+---
